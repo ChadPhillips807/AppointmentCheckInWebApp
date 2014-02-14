@@ -15,11 +15,11 @@ using Twilio;
     
         private TwilioRestClient twilioRestClient;
     
-        private string AccountSid = "ACd6f4ff7fc5fbb238dbf1876f7ec418b0";
-        private string AuthToken = "d7ab3ced1b2aebad2f843fa40cd50191";
+        private string AccountSid = "<YOUR_ACCOUNT_SID>";
+        private string AuthToken = "<YOUR_AUTH_TOKEN>";
     
         // Using this default number that Twilio assigned.
-        private string fromPhoneNum = "+12532042013";
+        private string fromPhoneNum = "<YOUR_ASSIGNED_TWILIO_NUMBER>";
     
         //public string Message { get; set; }
         //public string ToPhoneNum { get; set; }// This is the Doctor's phone number.
