@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="HealthcareDB">
+  <DataContextMoniker Name="/HealthcareDBDataContext" />
+  <nestedChildShapes>
+    <classShape Id="4581007d-34aa-46ef-b061-293f90205402" absoluteBounds="6.25, 2.125, 2, 1.7708968098958327">
+      <DataClassMoniker Name="/HealthcareDBDataContext/Appointment" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b6434730-f3e7-4e7f-a99d-377087b06d1e" absoluteBounds="6.265, 2.585, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1797e3e0-6fe6-42e3-8a69-1502acbf8f87" absoluteBounds="0.75, 3.375, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/HealthcareDBDataContext/Contact" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0ab2a0cc-552b-41b0-bd2e-53f07e9fcd3f" absoluteBounds="0.765, 3.835, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9e9f7444-2805-40b6-92c6-cdb0b418a1b9" absoluteBounds="3.5, 1.375, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/HealthcareDBDataContext/Doctor" />
+      <nestedChildShapes>
+        <elementListCompartment Id="451487ac-9d7e-4319-a40e-8ca5655f3c1b" absoluteBounds="3.515, 1.835, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="65bd370c-7b1e-4b82-9134-734e09174b53" absoluteBounds="3.5, 3.375, 2, 1.193992513020834">
+      <DataClassMoniker Name="/HealthcareDBDataContext/Patient" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0ea57a1e-405e-4c95-b108-b0a655c140ef" absoluteBounds="3.515, 3.835, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1a85aca7-c430-4ad5-aab6-8bf42b8ef8e4" absoluteBounds="3.5, 5.25, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/HealthcareDBDataContext/PhoneNumber" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8b589e77-ffbf-46b3-99e1-2c3627a04d6f" absoluteBounds="3.515, 5.71, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.5 : 2.34699625651042); (6.25 : 2.34699625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/HealthcareDBDataContext/Doctor/Doctor_Appointment" />
+      <nodes>
+        <classShapeMoniker Id="9e9f7444-2805-40b6-92c6-cdb0b418a1b9" />
+        <classShapeMoniker Id="4581007d-34aa-46ef-b061-293f90205402" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.75 : 3.375); (1.75 : 1.97199625651042); (3.5 : 1.97199625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/HealthcareDBDataContext/Contact/Contact_Doctor" />
+      <nodes>
+        <classShapeMoniker Id="1797e3e0-6fe6-42e3-8a69-1502acbf8f87" />
+        <classShapeMoniker Id="9e9f7444-2805-40b6-92c6-cdb0b418a1b9" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 3.63544840494792); (6.25 : 3.63544840494792)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/HealthcareDBDataContext/Patient/Patient_Appointment" />
+      <nodes>
+        <classShapeMoniker Id="65bd370c-7b1e-4b82-9134-734e09174b53" />
+        <classShapeMoniker Id="4581007d-34aa-46ef-b061-293f90205402" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 3.97199625651042); (3.5 : 3.97199625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/HealthcareDBDataContext/Contact/Contact_Patient" />
+      <nodes>
+        <classShapeMoniker Id="1797e3e0-6fe6-42e3-8a69-1502acbf8f87" />
+        <classShapeMoniker Id="65bd370c-7b1e-4b82-9134-734e09174b53" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.75 : 4.7612939453125); (1.75 : 5.94314697265625); (3.5 : 5.94314697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/HealthcareDBDataContext/Contact/Contact_PhoneNumber" />
+      <nodes>
+        <classShapeMoniker Id="1797e3e0-6fe6-42e3-8a69-1502acbf8f87" />
+        <classShapeMoniker Id="1a85aca7-c430-4ad5-aab6-8bf42b8ef8e4" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
